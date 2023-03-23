@@ -1,0 +1,37 @@
+header{
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    padding-top: 20px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        nav{
+            display: flex;
+            justify-content: center;
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                li{
+                    color: $white;
+                    margin-right: 40px;
+                }
+            }
+            .btns{
+                .btn{
+                    padding: 8px 20px;
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                .btn-outline-primary{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
