@@ -1,0 +1,27 @@
+details{
+    width: 800px;
+    min-height: 80px;
+    background: #F6F6F8;
+    padding: 25px 40px 0 45px;
+    transition: transform .1s;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    summary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul{
+        padding: 25px 0;
+        li{
+            margin-bottom: 5px;
+        }
+    }
+}
+details[open]{
+    img{
+        transform: rotate(180deg);
+        transition: transform .1s;
+    }
+}
