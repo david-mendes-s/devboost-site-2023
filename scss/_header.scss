@@ -18,6 +18,13 @@ header{
                 li{
                     color: $white;
                     margin-right: 40px;
+                    a{
+                        color: $white;
+                    
+                        &:hover{
+                            color: $orange;
+                        }
+                    }
                 }
             }
             .btns{

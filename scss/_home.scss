@@ -99,7 +99,7 @@
                 }
             }
         }
-        .imagem{
+        .image{
             position: relative;
             width: 696px;
             height: 403px;
@@ -141,6 +141,71 @@
                 h2{
                     font-size: 35px;
                     margin-right: 18px;
+                }
+            }
+        }
+    }
+}
+
+.estrutura{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+
+        .content{
+            border-bottom: 1px solid #E3E3E3;
+
+            .top{
+                max-width: 492px;
+                margin-bottom: 34px;
+            }
+            .items{
+                .items-top{
+                    margin-bottom: 22px;
+                }
+                .items-top, .items-bottom{
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        li{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            width: 280px;
+                            height: 76px;
+                            background: #EAECF3;
+                            border-radius: 8px;
+                            &:not(:first-child){
+                                margin-left: 32px;
+                            }
+                            p{
+                                margin-left: 10px;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .whatsapp{
+                display: flex;
+                flex-direction: row;
+                margin: 35px 0;
+
+                p{
+                    margin-left: 10px;
+
+                    a{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-decoration-line: underline;
+                        color: $black;
+                    }
                 }
             }
         }
