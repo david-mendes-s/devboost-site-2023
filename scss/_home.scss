@@ -317,9 +317,6 @@
                 }
             }
         }
-        .line{
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
     }
 }
 
@@ -444,6 +441,69 @@
                 }
             }
 
+        }
+    }
+}
+
+.pratica{
+    height: auto;
+    background: url('../img/background_pratica.svg') center center;
+    color: $white;
+
+    .container{
+        .top{
+            padding-top: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .text{
+                .title{
+                    margin-bottom: 6px;
+                }
+            }
+            .arrows{
+                display: flex;
+                flex-direction: row;
+                :not(:first-child){
+                    margin-left: 15px;
+                }
+
+                .icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 34px;
+                    height: 34px;
+                    background: $orange;
+                    border-radius: 2px;
+                }
+            }
+        }
+        .bottom{
+            margin-top: 35px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .screen{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 592px;
+                height: 394px;
+                border-radius: 10px;
+
+                &.nubank{
+                    background-color: #830AD1;
+                }
+                &.challenge{
+                    background-color: #5137EE;
+                }
+
+            }
         }
     }
 }
