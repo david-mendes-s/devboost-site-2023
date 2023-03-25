@@ -4,8 +4,10 @@ details{
     background: #F6F6F8;
     padding: 25px 40px 0 45px;
     transition: transform .1s;
-    margin-bottom: 25px;
     cursor: pointer;
+    &:not(:first-child){
+        margin-top: 25px;
+    }
 
     summary{
         display: flex;
