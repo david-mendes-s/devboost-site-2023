@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/devboost-education/devboost-setup-basic/issues"
   },
-  "homepage": "https://github.com/devboost-education/devboost-setup-basic#readme"
+  "homepage": "https://github.com/devboost-education/devboost-setup-basic#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0"
+  }
 }

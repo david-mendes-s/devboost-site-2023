@@ -565,53 +565,180 @@
 
 .gratuito{
     height: auto;
-    padding: 90px 0 85px 0;
     background-color: $black;
-
     .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 90px 0 85px 0;
 
-        .text{
-            color: $white;
-
-            .title{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                img{
-                    margin-right: 8px;
-                }
-            }
-            h2{
-                max-width: 375px;
-                margin: 8px 0;
-            }
-            p{
-                max-width: 490px;
-            }
-            .social{
-                margin-top: 20px;
-                display: flex;
-                flex-direction: row;
-
-                .icon{
+            .text{
+                color: $white;
+    
+                .title{
                     display: flex;
-                    justify-content: center;
+                    flex-direction: row;
                     align-items: center;
-                    width: 45px;
-                    height: 45px;
-                    background: $white;
-                    &:not(:first-child){
-                        margin-left: 18px;
+                    img{
+                        margin-right: 8px;
+                    }
+                }
+                h2{
+                    max-width: 375px;
+                    margin: 8px 0;
+                }
+                p{
+                    max-width: 490px;
+                }
+                .social{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+    
+                    .icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 45px;
+                        height: 45px;
+                        background: $white;
+                        &:not(:first-child){
+                            margin-left: 18px;
+                        }
                     }
                 }
             }
+            .image{
+                margin-right: 90px;
+            }
         }
-        .image{
-            margin-right: 90px;
+        
+    }
+}
+
+.empresas{
+    height: auto;
+    background-color: $black;
+
+    .container{
+        .top{
+            text-align: center;
+            padding: 70px 0;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title{
+                margin-bottom: 8px;
+            }
+            h2{
+               max-width: 463px; 
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            .logo{
+                img{
+                    width: auto;
+                    height: 23px
+                }
+            }
+        }
+    }
+}
+
+.preco{
+    .container{
+        .content-preco{
+            background-color: $black;
+            margin: 100px 0;
+            min-height: 682px;
+            color: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .content-left{
+                padding: 0 55px 0 70px;
+                border-right: 1px solid #2D2E23;;
+                .box{
+                    max-width: 250px;
+                    &:not(:first-child){
+                        margin-top: 50px;
+                    }
+                    h5{
+                        margin: 15px 0 6px 0;
+                    }
+                }
+            }
+            .content-right{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 208px;
+                .vagas{
+                    display: flex;
+                    flex-direction: row;
+                    background: #2B2B2B;
+                    border-radius: 28px;
+                    padding: 7px 24px;
+                    img{
+                        margin-right: 12px;
+                    }
+                    p{
+                        color: $white;
+                        font-size: 15px;
+                    }
+                }
+                h2{
+                    margin-top: 20px;
+                    font-size: 35px;
+                    max-width: 414px;
+                }
+                .box-preco{
+                    margin: 20px 0 30px 0;
+                    .numeros{
+                        display: flex;
+                        flex-direction: row;
+
+                        .real, .valor{
+                            font-family: 'Poppins';
+                            font-weight: 700;
+                        }
+                        .real{
+                            font-size: 25px;
+                            margin-right: 7px;
+                        }
+                        .valor{
+                            font-size: 70px;
+                            line-height: 1;
+                            span{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #CFCFCF;
+                    }
+                }
+                .btn{
+                    padding: 17px 58px;
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 22px;
+                }
+            }
+            
         }
     }
 }
