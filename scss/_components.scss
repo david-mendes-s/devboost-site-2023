@@ -20,6 +20,10 @@ details{
             margin-bottom: 5px;
         }
     }
+
+    @media (max-width: 991px){
+        width: 100%;
+    }
 }
 details[open]{
     img{

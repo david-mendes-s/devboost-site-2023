@@ -687,7 +687,7 @@
             }
         }
     }
-    
+
     @media (max-width: 991px){
         .container{
             .items{
@@ -740,6 +740,29 @@
                 }
             }
 
+        }
+    }
+
+    @media (max-width: 991px){
+        .container{
+            display: flex;
+            flex-direction: column;
+
+            .content-left{
+                .text{
+                    text-align: center;
+                    margin-bottom: 30px;
+                    h2{
+                        max-width: 100%;
+                    }
+                    p{
+                        max-width: 100%;
+                    }
+                }
+                ul{
+                    display: none;
+                }
+            }
         }
     }
 }
