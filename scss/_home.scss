@@ -607,6 +607,35 @@
             }
         }
     }
+
+    @media (max-width: 991px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            .content-left{
+                text-align: center;
+                max-width: 100%;
+                margin-bottom: 50px;
+            }
+            .content-right{
+                ul{
+                   margin-right: 0;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: 100%;
+                        text-align: center;
+                        margin-bottom: 30px;
+                        .icon{
+                            margin: 0 0 20px 0;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .depoimentos{
