@@ -774,58 +774,101 @@
     color: $white;
 
     .container{
-        .top{
-            padding-top: 120px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            .text{
-                .title{
-                    margin-bottom: 6px;
-                }
-            }
-            .arrows{
+        .swiper-container{
+            .top{
+                padding-top: 120px;
                 display: flex;
                 flex-direction: row;
-                :not(:first-child){
-                    margin-left: 15px;
+                justify-content: space-between;
+                align-items: center;
+    
+                .text{
+                    .title{
+                        margin-bottom: 6px;
+                    }
                 }
-
-                .icon{
+                .arrows{
+                    display: flex;
+                    flex-direction: row;
+                    :not(:first-child){
+                        margin-left: 15px;
+                    }
+                    .icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 34px;
+                        height: 34px;
+                        background: $orange;
+                        border-radius: 2px;
+                    }
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        position: static;
+                    }
+                    .swiper-button-prev::after {
+                        content: none;
+                    }
+                    .swiper-button-next::after {
+                        content: none;
+                    }
+                }
+            }
+            .swiper-wrapper{
+                margin-top: 35px;
+                padding-bottom: 60px;
+                .swiper-slide{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 34px;
-                    height: 34px;
-                    background: $orange;
-                    border-radius: 2px;
+                    height: 400px;
+                    border-radius: 10px;
+                    &:not(:first-child){
+                        margin-left: 30px;
+                    }
+                    &.nubank{
+                        background-color: #830AD1;
+                    }
+                    &.challenge{
+                        background-color: #5137EE;
+                    }
                 }
             }
         }
-        .bottom{
-            margin-top: 35px;
-            padding-bottom: 60px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            
-            .screen{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 592px;
-                height: 394px;
-                border-radius: 10px;
 
-                &.nubank{
-                    background-color: #830AD1;
+        @media (max-width: 991px){
+            .swiper-container{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        height: auto;
+                        &:not(:first-child){
+                            margin-left: 40px;
+                        }
+                        img{
+                            padding: 50px 0;
+                            width: 80%;
+                            height: auto;
+                        }
+                        
+                    }
                 }
-                &.challenge{
-                    background-color: #5137EE;
+            }
+        }
+        @media (max-width: 576px){
+            .swiper-container{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        height: 300px;
+                        &:not(:first-child){
+                            margin-left: 20px;
+                        }
+                        img{
+                            width: 80%;
+                            height: auto;
+                        }
+                        
+                    }
                 }
-
             }
         }
     }

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <title>DevBoost | Escola de programação e Tecnologia</title>
 </head>
 <body>
@@ -363,27 +364,36 @@
 
     <section  class="pratica">
         <div class="container">
-            <div class="top">
-                <div class="text">
-                    <div class="title">Prática</div>
-                    <h2>Crie projetos reais</h2>
-                </div>
-                <div class="arrows">
-                    <div class="icon">
-                        <img src="img/icons/icon_left.svg" alt="">
+            <div class="swiper-container">
+                <div class="top">
+                    <div class="text">
+                        <div class="title">Prática</div>
+                        <h2>Crie projetos reais</h2>
                     </div>
-                    <div class="icon">
-                        <img src="img/icons/icon_right.svg" alt="">
+                    <div class="arrows">
+                        <div class="icon swiper-button-prev">
+                            <img src="img/icons/icon_left.svg" alt="">
+                        </div>
+                        <div class="icon swiper-button-next">
+                            <img src="img/icons/icon_right.svg" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="screen nubank">
-                    <img src="img/project_nubank.png" alt="">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide nubank">
+                        <img src="img/project_nubank.png" alt="">
+                    </div>
+                    <div class="swiper-slide challenge">
+                        <img src="img/project_nubank.png" alt="">
+                    </div>
+                    <div class="swiper-slide nubank">
+                        <img src="img/project_nubank.png" alt="">
+                    </div>
+                    <div class="swiper-slide challenge">
+                        <img src="img/project_nubank.png" alt="">
+                    </div>
                 </div>
-                <div class="screen challenge">
-                    <img src="img/project_challenge02.png" alt="">
-                </div>
+                
             </div>
             <div class="line"></div>
         </div>
@@ -662,5 +672,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
 </html>
