@@ -343,6 +343,7 @@
                     flex-direction: column;
                     align-items: center;
                     width: 33.3%;
+                    padding: 0 20px;
 
                     .icon{
                         margin-bottom: 15px;
@@ -1165,7 +1166,6 @@
 .faq{
     height: auto;
     padding-bottom: 100px;
-    
     .container{
         display: flex;
         flex-direction: row;
@@ -1189,6 +1189,20 @@
                 box-shadow: none;
                 .fa-brands{
                     margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .content-left{
+                margin-bottom: 50px;
+                .text{
+                    max-width: 100%;
                 }
             }
         }

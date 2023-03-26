@@ -67,4 +67,40 @@ footer{
             }
         }
     }
+
+    @media (max-width: 991px){
+        .container{
+            .top{
+                flex-wrap: wrap;
+            }
+        }
+    }
+    @media (max-width: 576px){
+        .container{
+            text-align: center;
+
+            .top{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .logo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .menu, .contatos, .transparencia{
+                    margin-top: 40px;
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .social{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }

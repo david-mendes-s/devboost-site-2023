@@ -26,3 +26,14 @@ button{
     background-color: transparent;
     cursor: pointer;
 }
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: #464646;
+    border: 5px solid #464646;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F65D25;
+    border-radius: 50px;
+}
