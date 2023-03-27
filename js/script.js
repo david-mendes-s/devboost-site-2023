@@ -1,5 +1,14 @@
+// Biblioteca AOS
+AOS.init({
+  duration: 1000,
+  easing: 'ease-in-out',
+  delay: 100,
+  once: true
+});
+
+
+// Carrossel com a biblioteca Swiper
 var mySwiper = new Swiper('.swiper-container', {
-    // Configurações do Swiper
       loop: true,
       pagination: {
           el: '.swiper-pagination',
@@ -16,28 +25,21 @@ var mySwiper = new Swiper('.swiper-container', {
       },
 });
 
-// Obtém o botão e o modal
+// JS do modal do vídeo do Youtube
 var botao = document.querySelector(".play");
 var modal = document.querySelector(".modal");
 var modalFechar = document.querySelector(".modal-fechar");
 
-// Adiciona um ouvinte de evento ao botão
 botao.addEventListener("click", function() {
-  // Exibe o modal
   modal.style.display = "block";
 });
 
-// Adiciona um ouvinte de evento ao botão de fechar
 modalFechar.addEventListener("click", function() {
-  // Oculta o modal
   modal.style.display = "none";
 });
 
-// Adiciona um ouvinte de evento ao elemento window para fechar o modal ao clicar fora dele
 window.addEventListener("click", function(event) {
-  // Verifica se o alvo do evento não é o modal nem o botão de abrir o modal
   if (event.target == modal) {
-    // Oculta o modal
     modal.style.display = "none";
   }
 });

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
@@ -14,7 +15,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="#"><img src="img/logo.svg" alt=""></a>
+            <a href="#"><img src="img/logo.svg" alt="" class="logo"></a>
             <nav>
                 <ul>
                     <li><a href="https://devboost.com.br/">Home</a></li>
@@ -26,12 +27,15 @@
                     <a href="https://dashboard.kiwify.com.br/login"><button class="btn btn-outline-primary">Login</button></a>
                 </div>
             </nav>
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-up">
                 <div class="title">
                     <img src="img/icons/icon_flame.png" alt="" class="icon">Evolua sua carreira de programação
                 </div>
@@ -52,7 +56,7 @@
                 <p>Nossa preocupação é com a sua evolução como profissional completo, com habilidades interpessoais, comunicação e gerenciamento de projetos, para que você possa alcançar o sucesso em sua carreira de programação.</p>
             </div>
             <div class="content">
-                <ul>
+                <ul data-aos="fade-right">
                     <li>
                         <div class="icon">
                             <img src="img/icons/icon_understanding.svg" alt="">
@@ -90,7 +94,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="image">
+                <div class="image" data-aos="fade-left">
                     <button class="play">
                         <img src="img/trail_man.jpg" alt="" class="img">
                         <div class="player">
@@ -119,7 +123,7 @@
                     <h2>Estrutura criada para você iniciar e avançar profissionalmente</h2>
                 </div>
                 <div class="items">
-                    <div class="items-top">
+                    <div class="items-top" data-aos="fade-right">
                         <ul>
                             <li>
                                 <img src="img/icons/icon_infinite.svg" alt="">
@@ -135,7 +139,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="items-bottom">
+                    <div class="items-bottom" data-aos="fade-left">
                         <ul>
                             <li>
                                 <img src="img/icons/icon_mentorships.svg" alt="">
@@ -171,15 +175,15 @@
             </div>
             <div class="bottom">
                 <ul>
-                    <li>
+                    <li data-aos="fade-right">
                         <div class="icon"><img src="img/icons/icon_professional.svg" alt=""></div>
                         <p>Se você é um profissional de qualquer área que deseja explorar novas oportunidades de carreira, a programação pode ser a escolha certa. Mesmo sem experiência prévia em programação, você pode migrar para esta área e desfrutar de mais liberdade, realização e retorno financeiro.</p>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in">
                         <div class="icon"><img src="img/icons/icon_initial.svg" alt=""></div>
                         <p>Se você é iniciante ou já fez alguns cursos de programação, mas ainda não se sente preparado para executar projetos completos e está inseguro em relação ao mercado de trabalho, você está no lugar certo.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left">
                         <div class="icon"><img src="img/icons/icon_work.svg" alt=""></div>
                         <p>Se você já trabalha como programador e deseja se especializar ainda mais para impulsionar sua carreira e aumentar seus salários, a Devboost é a escolha certa para você.</p>
                     </li>
@@ -204,21 +208,21 @@
                     <p class="aviso">* valores com base no site glassdoor.com.br</p>
                 </div>
                 <div class="items">
-                    <div class="card jr">
+                    <div class="card jr" data-aos="fade-right">
                         <div class="niveis">
                             <h3>Junior</h3>
                             <p>Iniciante na área, até 1 ano de experiência</p>
                         </div>
                         <div class="salario">2-4k</div>
                     </div>
-                    <div class="card pl">
+                    <div class="card pl" data-aos="fade-up">
                         <div class="niveis">
                             <h3>Pleno</h3>
                             <p>Atua há algum tempo no mercado</p>
                         </div>
                         <div class="salario">6-8k</div>
                     </div>
-                    <div class="card sr">
+                    <div class="card sr" data-aos="fade-left">
                         <div class="niveis">
                             <h3>Sênior</h3>
                             <p>Profissional com muita experiência</p>
@@ -240,7 +244,7 @@
                 <a href="https://pay.kiwify.com.br/QTnxhp2"><button class="btn">Garantir minha vaga</button></a>
             </div>
             <div class="content-right">
-                <ul>
+                <ul data-aos="fade-left">
                     <li>
                         <div class="icon"><img src="img/icons/icon_learn.svg" alt=""></div>
                         <div class="text">
@@ -281,19 +285,19 @@
                 <h2>O que falam nossos alunos</h2>
             </div>
             <div class="items">
-                <div class="card d1">
+                <div class="card d1" data-aos="fade-right">
                     <img src="img/icons/icon_quotes.svg" alt="" class="icon">
                     <p>Lorem ipsum dolor sit amet consectetur. Amet ac viverra tortor ut a potenti faucibus in. Sed morbi et massa faucibus. In condimentum nisl tincidunt morbi cras amet sit a. Orci sit mattis at nulla est. Posuere amet amet pellentesque laoreet enim sed sed.</p>
                     <h5>Alice Costa</h5>
                     <p>Desenvolvedora <span>Front-end na Stone</span></p>
                 </div>
-                <div class="card d2">
+                <div class="card d2" data-aos="fade-up">
                     <img src="img/icons/icon_quotes.svg" alt="" class="icon">
                     <p>Lorem ipsum dolor sit amet consectetur. Amet ac viverra tortor ut a potenti faucibus in. Sed morbi et massa faucibus. In condimentum nisl tincidunt morbi cras amet sit a. Orci sit mattis at nulla est. Posuere amet amet pellentesque laoreet enim sed sed.</p>
                     <h5>Alice Costa</h5>
                     <p>Desenvolvedora <span>Front-end na Stone</span></p>
                 </div>
-                <div class="card d3">
+                <div class="card d3" data-aos="fade-left">
                     <img src="img/icons/icon_quotes.svg" alt="" class="icon">
                     <p>Lorem ipsum dolor sit amet consectetur. Amet ac viverra tortor ut a potenti faucibus in. Sed morbi et massa faucibus. In condimentum nisl tincidunt morbi cras amet sit a. Orci sit mattis at nulla est. Posuere amet amet pellentesque laoreet enim sed sed.</p>
                     <h5>Alice Costa</h5>
@@ -385,10 +389,10 @@
                     </div>
                 </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide nubank">
+                    <div class="swiper-slide nubank" data-aos="fade-right">
                         <img src="img/project_nubank.png" alt="">
                     </div>
-                    <div class="swiper-slide challenge">
+                    <div class="swiper-slide challenge" data-aos="fade-left">
                         <img src="img/project_nubank.png" alt="">
                     </div>
                     <div class="swiper-slide nubank">
@@ -409,7 +413,7 @@
             <div class="title">Tecnologias</div>
             <h2>Tecnologias que ensinamos no treinamento</h2>
         </div>
-        <div class="logos-top">
+        <div class="logos-top" data-aos="fade-right">
             <div class="card">
                 <div class="icon"><img src="img/logos/reactjs.svg" alt=""></div>
                 <div class="text">
@@ -446,7 +450,7 @@
                 </div>
             </div>
         </div>
-        <div class="logos-bottom">
+        <div class="logos-bottom" data-aos="fade-left">
             <div class="card">
                 <div class="icon"><img src="img/logos/reactjs.svg" alt=""></div>
                 <div class="text">
@@ -489,7 +493,7 @@
     <div class="gratuito">
         <div class="container">
             <div class="content">
-                <div class="text">
+                <div class="text" data-aos="fade-right">
                     <div class="title"><img src="img/icons/icon_flame.png" alt="">Conteúdo gratuito</div>
                     <h2>Confira os conteúdos gratuitos que produzimos diariamente!</h2>
                     <p>Conteúdos diariamente no Youtube e Instagram com projetos práticos e dicas valiosas para impulsionar sua carreira, além de tirar as dúvidas dos nossos seguidores com o objetivo de ajudá-los a se tornarem programadores de destaque.</p>
@@ -502,7 +506,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="image">
+                <div class="image" data-aos="fade-left">
                     <img src="img/devices.png" alt="">
                 </div>
             </div>
@@ -539,7 +543,7 @@
     <section class="preco">
         <div class="container">
             <div class="content-preco">
-                <div class="content-left">
+                <div class="content-left" data-aos="fade-up">
                     <div class="box">
                         <img src="img/icons/icon_security.svg" alt="">
                         <h5>7 dias de garantia</h5>
@@ -562,7 +566,7 @@
                         <p>Vagas abertas!</p>
                     </div>
                     <h2>Dê o primeiro passo e evolua sua carreira na programação</h2>
-                    <div class="box-preco">
+                    <div class="box-preco" data-aos="flip-left">
                         <p>Apenas</p>
                         <div class="numeros">
                             <div class="real">R$</div>
@@ -678,7 +682,9 @@
         </div>
     </footer>
 
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

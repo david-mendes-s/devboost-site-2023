@@ -8,6 +8,10 @@ header{
     .container{
         display: flex;
         justify-content: space-between;
+        .logo{
+            min-width: 150px;
+            height: auto;
+        }
         nav{
             display: flex;
             justify-content: center;
@@ -40,9 +44,21 @@ header{
                 }
             }
         }
+        .menu-toggle{
+            font-size: 23px;
+            color: $white;
+            display: none;
+        }
     }
-
-    @media (max-width: 576px){
-        display: none;
+    
+    @media (max-width: 991px){
+        .container{
+            nav{
+                display: none;
+            }
+            .menu-toggle{
+                display: block;
+            }
+        }
     }
 }

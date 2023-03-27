@@ -30,11 +30,13 @@
         background: url('../img/banner_mobile.svg') center center;
         background-size: cover;
         text-align: center;
+        height: auto;
 
         .text{
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 140px;
 
             h1, p{
                 max-width: 100%;
@@ -263,6 +265,10 @@
                         line-height: 22px;
                         text-decoration-line: underline;
                         color: $black;
+
+                        &:hover{
+                            color: $orange;
+                        }
                     }
                 }
             }
@@ -703,6 +709,23 @@
                     margin: 0;
                 }
                 
+            }
+        }
+    }
+    @media (max-width: 576px){
+        .container{
+            .items{
+                display: flex;
+                flex-direction: column;
+                .card{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &:not(:first-child){
+                        margin-top: 30px;
+                    }
+                }
             }
         }
     }
@@ -1199,7 +1222,7 @@
                 .content-right{
                     padding: 0;
                     order: -1;
-                    padding-bottom: 50px;
+                    padding: 0 40px 50px 40px;
                 }
             }
         }
