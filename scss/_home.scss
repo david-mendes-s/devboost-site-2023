@@ -946,9 +946,33 @@
     }
     .logos-top{
         margin-top: 40px;
+        animation: marquee-left 60s linear infinite;
+        @keyframes marquee-left {
+            0% {
+                transform: translateX(22%);
+            }
+            50% {
+                transform: translateX(-20%);
+            }
+            100% {
+                transform: translateX(22%);
+            }
+        }
     }
     .logos-bottom{
         margin: 30px 0 60px 0;
+        animation: marquee-right 60s linear infinite;
+        @keyframes marquee-right {
+            0% {
+                transform: translateX(-22%);
+            }
+            50% {
+                transform: translateX(20%);
+            }
+            100% {
+                transform: translateX(-22%);
+            }
+        }
     }
 }
 
