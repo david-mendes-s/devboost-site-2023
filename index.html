@@ -15,8 +15,14 @@
 <body>
     <header>
         <div class="container">
-            <a href="#"><img src="img/logo.svg" alt="" class="logo"></a>
-            <nav>
+            <div class="content-dropdown">
+                <a href="#"><img src="img/logo.svg" alt="" class="logo"></a>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav id="menu-dropdown" >
                 <ul>
                     <li><a href="https://devboost.com.br/">Home</a></li>
                     <li><a href="http://bit.ly/3Xt0qQ9" target="_blank">Comunidade</a></li>
@@ -27,15 +33,13 @@
                     <a href="https://dashboard.kiwify.com.br/login"><button class="btn btn-outline-primary">Login</button></a>
                 </div>
             </nav>
-            <button class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <div class="text" >
+            <div class="text" id="text-pd">
                 <div class="title" data-aos="fade-up">
                     <img src="img/icons/icon_flame.png" alt="" class="icon">Evolua sua carreira de programação
                 </div>
@@ -49,7 +53,7 @@
     <section class="trilha">
         <div class="container">
             <div class="top">
-                <div class="text">
+                <div class="text" >
                     <div class="title">Trilha de Carreira</div>
                     <h2>Além das aulas, aqui você terá acesso a conteúdos extras focados na conquista da sua vaga como programador.</h2>
                 </div>

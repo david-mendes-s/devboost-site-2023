@@ -1,8 +1,9 @@
 .hero{
     background: url('../img/banner.svg') center center;
     height: 700px;
-    
+   
     .text{
+       
         padding-top: 215px;
         color: $white;
 
@@ -23,6 +24,12 @@
             margin-bottom: 20px;
             font-size: 15px;
             line-height: 200%;
+        }
+    }
+
+    @media (max-width: 991px){
+        .text-pd{
+            padding-top: 350px;
         }
     }
 

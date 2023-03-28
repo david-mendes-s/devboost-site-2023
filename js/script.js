@@ -43,3 +43,26 @@ window.addEventListener("click", function(event) {
     modal.style.display = "none";
   }
 });
+
+//Menu dropdown
+
+const buttonDropDown = document.getElementById('menu-toggle');
+const nav = document.getElementById('menu-dropdown');
+// adiciona um padding a proxima section 
+const text = document.getElementById('text-pd');
+
+let isMenuOpen = false;
+
+buttonDropDown.addEventListener('click', function( ){
+  
+  if (isMenuOpen) {
+    nav.classList.add("menu-dropdown");
+    isMenuOpen = false;
+    text.classList.add("text-pd");
+    
+  } else {
+    nav.classList.remove("menu-dropdown");
+    isMenuOpen = true;
+    text.classList.remove("text-pd");
+  }  
+})

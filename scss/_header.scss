@@ -12,6 +12,7 @@ header{
             min-width: 150px;
             height: auto;
         }
+        
         nav{
             display: flex;
             justify-content: center;
@@ -53,12 +54,50 @@ header{
     
     @media (max-width: 991px){
         .container{
-            nav{
+            
+            flex-direction: column;
+            
+            .content-dropdown {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav {
                 display: none;
+            }
+            .menu-dropdown{    
+                
+                display: flex;
+                flex-direction: column;
+
+                padding-bottom: 32px;
+
+                ul {
+                    
+                    align-items: flex-start;
+                    flex-direction: column;
+                    margin-top: 10px;
+
+                    li{
+                        padding: 12px 0;
+                    }
+                }
+
+                .btns {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    .btn-outline-primary{
+                        margin-top: 12px;
+                        margin-left: 0px;
+                    }
+                }
             }
             .menu-toggle{
                 display: block;
             }
+
         }
     }
 }
